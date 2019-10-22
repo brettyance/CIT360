@@ -63,7 +63,7 @@ public class Start {
 					+ "(C)ollections,\n"
 					+ "(T)hreads and executables,\n"
 					+ "(H)ibernate,\n"
-					+ "(J)SON and HttpURL Connection, or"
+					+ "(J)SON and HttpURL Connection, or\n"
 					+ "(Q)uit?").toUpperCase();
 			
 			if (key.containsKey(reply)) {
