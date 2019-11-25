@@ -78,6 +78,7 @@ public class Start {
 			else view.print("Not an option. Try again.");
 		}
 		view.print("Goodbye!");
+		view.close();	
 		
 	}
 	
