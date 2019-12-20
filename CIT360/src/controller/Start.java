@@ -53,7 +53,7 @@ public class Start {
 				key.put("C", new CollectionsExample());
 				key.put("T", new ThreadsExample());
 				key.put("H", new HibernateExample());
-				key.put("J", new HibernateExample());
+				key.put("J", new CardPull());
 		
 		Boolean again = true;
 	

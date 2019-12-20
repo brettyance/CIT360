@@ -1,13 +1,10 @@
 package model;
 
-import javafx.scene.image.Image;
-
 public class Card {
 
 	String code;
 	String suit;
 	String value;
-	Image image;
 	
 	public Card (String code, String suit, String value) {
 		this.code = code;

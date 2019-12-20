@@ -9,6 +9,8 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
+import com.google.gson.*;
+
 import model.Card;
 
 public class CardPull implements ListItem {
@@ -23,8 +25,10 @@ public class CardPull implements ListItem {
 			
 			Start.view.print(card.toString() + "\n");
 			
+			//take Object and convert to JSON
+			printJSON(card);
+			
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -74,5 +78,13 @@ public class CardPull implements ListItem {
 		
 		
 		return con;
+	}
+	
+	static void printJSON(Card card) {
+		
+		//take Object and convert to JSON
+		Gson gson = new Gson();
+		String jsonString = gson.toJson(card);
+		System.out.println(jsonString);
 	}
 }
